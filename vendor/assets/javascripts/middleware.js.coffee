@@ -3,6 +3,7 @@
 #= require_tree ./middleware/component
 
 window.Middleware = {
+  Env:    {}
   System: {}
   Component: {}
   }
