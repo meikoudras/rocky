@@ -42,8 +42,10 @@ class Middleware.Component.JsonForm extends Middleware.System.Base
       @form.trigger("request:failed", json)
 
   completeForm: (event, json) =>
+    @form.trigger 'jsonForm:completed'
 
   updateForm: (event, json) =>
+    @form.trigger 'jsonForm:updated'
 
   cancelForm:  =>
     @container.remove()
